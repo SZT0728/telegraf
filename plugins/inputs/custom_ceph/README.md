@@ -1,0 +1,10 @@
+## Configuration
+
+```toml @sample.conf
+# Read metrics about custom-ceph usage
+[[inputs.custom-ceph]]
+  ## where the ceph binary
+  ceph_binary = /etc/ceph/ceph.config
+  ## the ceph user
+  ceph_user = admin
+```
