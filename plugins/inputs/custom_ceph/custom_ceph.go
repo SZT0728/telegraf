@@ -25,6 +25,7 @@ func (*CustomCeph) Init() error {
 
 func (*CustomCeph) Gather(acc telegraf.Accumulator) error {
 	acc.AddFields("state", map[string]interface{}{"value": "pretty good"}, map[string]string{"tag-key": "tag-value"})
+	acc.AddGauge("test-measurement", map[string]interface{}{"gauge-value": 111}, map[string]string{"guage-tag-key": "guage-tag-value"})
 	return nil
 }
 
